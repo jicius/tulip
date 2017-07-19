@@ -1,0 +1,29 @@
+site_name: jicius
+
+site_url: null
+
+repo_name: null
+
+site_description: jicius
+
+site_author: jicius
+
+# set favicon in path /docs
+site_favicon: favicon.ico
+
+copyright: ©jicius 2017
+
+google_analytics: ['UA-32763568', 'mkdocs.org']
+
+pages:
+- [help.md, help, 'help']
+
+theme: readthedocs
+
+theme_dir: null
+
+docs_dir: docs
+
+site_dir: site
+
+dev_addr: 0.0.0.0:8000
