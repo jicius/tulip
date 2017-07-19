@@ -8,5 +8,26 @@ pages:
     - Home: index.md
     - About: about.md
     - License: license.md
-    - Lanuages: languages/python.md
+    - Languages: [
+         languages/python.md,
+         languages/bash.md,
+         languages/c++.md,
+         languages/c.md,
+         languages/ruby.md,
+         languages/go.md,
+     ]
+    - Databases: [
+         databases/sqlite.md,
+         databases/splunk.md,
+         databases/redis.md,
+         databases/postgres.md,
+         databases/mysql.md,
+         databases/mongodb.md,
+         databases/elasticsearch.md
+     ]
+    - Mqs: [
+         mqs/kafka.md,
+         mqs/zeromq.md,
+         mqs/rabbitmq.md,
+     ]
     - Help: help.md
