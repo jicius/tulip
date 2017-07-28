@@ -33,4 +33,7 @@ pages:
     - Mls: [
          mls/tensorflow.md
      ]
+    - Tools: [
+         tools/celery.md
+     ]
     - Help: help.md
