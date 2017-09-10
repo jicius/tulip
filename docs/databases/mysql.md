@@ -34,6 +34,8 @@
 
 ## 常用操作
 
+基本命令：
+
     explain: 查看运行当前sql语句的QEP
     explain partitions: 查看特定表分区的附加信息
     explain extensions: 深入理解实际执行的sql语句
@@ -42,6 +44,24 @@
     show table status: 查看数据库表的底层大小及表结构(引擎类型、版本、数据、索引及行的平均长度)
     show status: 用来查看当前msyql服务器的当前内部状态信息
     show variables: 查看mysql系统变量的当前值
+
+安装授权：
+
+    yum安装：
+        yum install mysql-server
+    修改权限：
+        chown -R root:root /var/lib/mysql
+    重启mysql：
+        service mysqld restart
+    修改密码：
+        > UPDATE user SET Password=password('新密码') WHERE User='root';
+    重启mysql服务：
+        service mysqld restart
+    连接授权：
+        > update user set host='%' where user='root';    //这个命令执行错误时可略过
+        > flush privileges;
+        > select host, user from user; //检查‘%’ 是否插入到数据库中
+        > quit;
 
 
 ## 系统变量
